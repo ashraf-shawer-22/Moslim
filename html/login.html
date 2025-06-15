@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslim-تسجيل الدخول</title>
+    <link rel="icon" href="../images/muslim3.jpg">
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bondi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+</head>
+<header>
+    <video class="vid" src="../media/login_vid - Trim.mp4" autoplay loop muted></video>
+    <div class="nav">
+        
+        <a class="log" href="../intro-page.html">
+            <img class="img" src="../images/Muslim2.gif" width="100px" height="80px" alt="logo">
+        </a>
+        <!-- <img class="img" src="../images/Muslim2.gif" width="100px" height="80px" alt="logo"> -->
+    </div>
+</header>
+
+<body>
+
+    <div class="main">
+        <br>
+        <h1 style=" padding-bottom: 21px; margin-top: -7px;">Log In</h1>
+        <div class="form">
+            <br>
+            <form action="../intro-page.html" method="get" >
+
+                <input class="field" type="text" placeholder="Username" required name="user">
+                <br>
+                <br>
+                <input class="field" type="password" placeholder="Password" name="PW" required minlength="10"
+                    maxlength="20">
+                
+                <!-- <div class="checkbox"> -->
+                <div class="checkbox">
+                    <input id="check" type="checkbox" style="cursor: pointer;">
+                    <label for="check" style="cursor: pointer;">RememberMe</label>
+                </div>
+                
+                <input class="signin" type="submit" value="Log in" required name="log">
+                <br>
+                <span>Sign in with</span>
+                <div class="icons">
+                    <a href="#"><img src="../images/google.svg" alt="google" width="40px" height="30px"></a>
+                    <a href="#"><img src="../images/facebook.svg" alt="facebook" width="40px" height="30px"></a>
+                    <a href="#"><img src="../images/instagram.svg" alt="instgram" width="40px" height="30px"></a>
+                    <a href="#"><img src="../images/twitter.svg" alt="twitter" width="40px" height="30px"></a>
+                </div>
+                <span>Don't Have an Account?</span>
+                <br>
+                <a href="../html/sign-up.html" style="text-decoration: none; font-weight:bold; ">Sign up</a> here
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

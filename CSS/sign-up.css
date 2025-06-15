@@ -1,0 +1,108 @@
+
+@font-face{
+    font-family: Cairo;
+ src: url(/fonts/Cairo-VariableFont_slnt\,wght.ttf);
+    font-family: Tajawal;
+    src:url(/fonts/Tajawal-Black.ttf)
+}
+body{
+    direction: ltr;
+    font-family: Cairo;
+    background-image: url(/images/login.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    display: grid;
+}
+
+.nav .log:hover{
+    background-color: transparent !important;
+}
+
+.vid{
+    width: 100%;
+    height: auto;
+    position:fixed;
+    z-index: -1;
+}
+
+.nav {
+    background-image: url(../images/navbar_image1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2010;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    top: 0px;
+    height: 60px;
+    box-shadow: 10px 0 12px black;
+}
+.nav a img{
+    margin-top: -10px;
+}
+.main{
+    text-align: center;
+    width: 325px;
+    margin: 120px auto;
+    padding-top: 5px;
+    background-color: rgb(41 47 71 / 15%);
+    border-radius: 20px;
+    height: 450px;
+    overflow: hidden;
+}
+.form{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.field{
+    font-size: 17px;
+    /* margin-bottom: ; */
+    border-style: solid;
+    border-color: transparent transparent rgb(24, 20, 20) transparent;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #2c324f;
+    outline: none;
+    font-family: Cairo;
+    width: 250px;
+    margin-bottom: -5px;
+}
+.field::placeholder{
+    color:#30354f;
+}
+.signin{
+    font-size: 15px;
+    font-family: Cairo;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 200px;
+    color: #000000;
+    border-style: solid;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.signin:hover{
+    background-color: black;
+    color: white !important;
+    font-size: 15px;
+    font-style: normal;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.checkbox{
+    align-content: center;
+    width: 125px;
+}

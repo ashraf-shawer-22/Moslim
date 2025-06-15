@@ -1,0 +1,453 @@
+@font-face {
+    font-family: Cairo;
+    src: url(/fonts/Cairo-VariableFont_slnt\,wght.ttf);
+    font-family: Tajawal;
+    src: url(/fonts/Tajawal-Black.ttf)
+}
+
+body {
+    direction : rtl;
+    font-family : Cairo;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav {
+    display: flex;
+    /* background-color: #0189c3; */
+    background-image: url(../images/navbar_image1.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 2010;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    top: 0px;
+    right: 0px;
+    height: 61px;
+    box-shadow: 10px 0 12px black;
+}
+
+.nav a{
+    display: inline-block;
+    text-decoration: none;
+    font-family: Cairo;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.links .intro-page{
+    color: #000000;
+    background-color: rgb(196, 192, 192);
+}
+
+.nav button{
+    text-decoration: none;
+    padding: 12px;
+    position: relative;
+    font-family: Cairo;
+    color: #ffffff;
+    font-weight: bold;
+    background-color: transparent;
+    border-color: transparent;
+    font-size: 18px;
+}
+
+.nav button:hover {
+    color: #000000;
+    background-color: rgb(196, 192, 192);
+}
+
+.nav .account{
+    font-size: 13px;
+}
+
+.links{
+    align-self: center;
+    margin-left: 100px  ;
+    
+}
+
+.nav a:hover {
+    color: #000000;
+    background-color: rgb(196, 192, 192);
+}
+
+
+.logo{
+    margin-top: 50px;
+    text-align: center;
+    background-image: url(../images/intro1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 570px;  
+    position: relative;
+}
+
+.logo .logo2{
+     display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    margin-top: 50px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    height: 520px;  
+    width: 100%;
+}
+
+.logo .logo2 img{
+    height: 300px;
+    width: 445px;
+    z-index: 1020;
+    position: absolute;
+    top: -35px;
+}
+
+.logo .logo2 p{
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    top: 170px;
+    z-index: 1020;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.logo button{
+    align-self: center;
+    position: absolute;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #367fc3;
+    width: 110px;
+    font-weight: 700;
+    font-family: cairo;
+    margin-top: 120px;
+    top: 240px;
+}
+
+.logo button:hover  {
+    color: #367fc3;
+    cursor: pointer;
+    background-color: black;
+}
+
+.solid{
+    width: 100%;
+    height: 140px;
+    background-color: #367fc3;
+    margin-top: 5px;
+    position: relative;
+    /* border-radius: 0 0 20px 20px; */
+}
+
+.solid::before{
+    content: "";
+    text-align: center;
+    position: absolute;
+    top: 140px;
+    left: 50%;
+    right: 50%;
+    background-color: white;
+    border: rgb(0, 0, 0) 25px solid;
+    border-color: #367fc3  transparent transparent transparent
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.container .elsalah{
+    position: relative;
+    width:320px;
+    margin: 20px ;
+    background-image:url(../images/elsalah.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 2px cadetblue;
+    height: 440px;
+    transition-duration: 1s;
+}
+
+.container a{
+    text-decoration: none;
+}
+
+.container a div:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    transition-delay: 2ms;
+}
+.container .elsalah span{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-weight: bold !important;
+    font-size: 40px;
+}
+
+.container .fast{
+    position: relative;
+    width:320px;
+    margin: 20px ;
+    background-image:url(../images/fast.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 2px cadetblue;
+    height: 440px;
+    transition-duration: 1s;
+}
+
+.container .fast span{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-weight: bold !important;
+    font-size: 40px;
+}
+
+.container .hadith{
+    position: relative;
+    width:320px;
+    margin: 20px ;
+    background-image:url(../images/ahadith.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px 2px cadetblue;
+    height: 440px;
+    transition-duration: 1s;
+}
+
+.container .hadith span{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-weight: bold !important;
+    font-size: 40px;
+    padding-left: 10px;
+    left: 8%;
+}
+
+.container .zekr{
+    display: inline-grid;
+    position: relative;
+    width:320px;
+    margin: 20px ;
+    background-image:url(../images/zekr.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    text-align: center;
+    border-radius: 15px;
+    /* align-self: center; */
+    box-shadow: 10px 10px 15px 2px cadetblue;
+    height: 440px;
+    transition-duration: 1s;
+}
+
+.container .zekr span{
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-weight: bold !important;
+    font-size: 40px;
+    left: 10%;
+}
+
+.head ul li{
+    border:transparent 2px solid;
+    border-radius: 50px;
+    width: 230px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #0189c3;
+    box-shadow: 10px 10px 15px 2px rgb(119, 118, 118);
+}
+
+.head p{
+    padding-right: 50px;
+    padding-left: 20px;
+    /* border: black 2px solid; */
+    border-radius: 30px;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    right:50px;
+    font-weight: 800;
+}
+
+.head p span{
+    font-weight: bold;
+    color:#a91111;
+}
+
+.arkan ul li{
+    border: transparent 2px solid;
+    border-radius: 50px;
+    width: 230px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #0189c3;
+    box-shadow: 10px 10px 15px 2px rgb(119, 118, 118);
+}
+.arkan ol  li{
+    font-size: 23px;
+    font-weight: 800;
+    padding-right: 90px;
+    list-style-position: inside;
+}
+
+.arkan p{
+    padding-right: 30px;
+    padding-left: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    right:50px;
+    font-weight: 700;
+    direction: rtl ;
+}
+
+.Eleslam{
+    display: grid;
+    grid-template-columns: repeat(2,auto );
+}
+
+.arkan .Eleslam p{
+    padding-right: 30px;
+    padding-left: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    right:50px;
+    font-weight: 700;
+    direction: rtl ;
+}
+
+.Eleslam img{
+    width: 300px;
+    height: 300px;
+    margin: 0 10px 0 20px;
+    border-radius: 15px;
+}
+.property ul li{
+    border: transparent 2px solid;
+    border-radius: 50px;
+    width: 360px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #0189c3;
+    box-shadow: 10px 10px 15px 2px rgb(119, 118, 118);
+}
+
+.property ol  li{
+    font-size: 23px;
+    font-weight: 800;
+    padding-right: 90px;
+    list-style-position: inside;
+}
+
+.property p{
+    padding-right: 30px;
+    padding-left: 20px;
+    /* border: black 2px solid; */
+    border-radius: 30px;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    right:50px;
+    font-weight: 700;
+}
+
+.character ul li{
+    border: transparent 2px solid;
+    border-radius: 50px;
+    width: 460px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #0189c3;
+    box-shadow: 10px 10px 15px 2px rgb(119, 118, 118);
+}
+
+.character p{
+    padding-right: 40px;
+    padding-left: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    right:50px;
+    font-weight: 700;
+}
+
+.character ol li{
+    padding-right: 30px;
+    padding-left: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    width: 90%;
+    position: relative;
+    right:50px;
+    font-weight: 900;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: #000000;
+    align-content: center;
+    justify-content: center;
+    color: #0189c3;
+    direction: ltr;
+}
+
+footer .about{
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.share{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
